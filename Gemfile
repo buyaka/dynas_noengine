@@ -13,6 +13,7 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'spring',        group: :development
 
 gem 'nobrainer'
+gem 'foundation-rails'
 #gem 'unicorn'
 gem "brakeman", :require => false
 gem 'nobrainer-devise'
@@ -28,5 +29,6 @@ group :development do
   #gem 'capistrano-rvm'
   #gem 'capistrano-bundler'
   #gem 'capistrano3-unicorn'
+  gem 'rails_layout'
 end
 
