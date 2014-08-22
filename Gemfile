@@ -14,6 +14,13 @@ gem 'spring',        group: :development
 
 gem 'nobrainer'
 #gem 'unicorn'
+gem "brakeman", :require => false
+gem 'nobrainer-devise'
+gem 'foundation-rails'
+gem 'simple_form'
+
+gem 'omniauth-facebook'
+gem 'omniauth-twitter'
 
 group :development do
   #gem 'capistrano', '~> 3.1.0'
