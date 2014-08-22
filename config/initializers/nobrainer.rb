@@ -7,7 +7,13 @@ NoBrainer.configure do |config|
   # * RETHINKDB_URL, RDB_URL
   # * RETHINKDB_HOST, RETHINKDB_PORT, RETHINKDB_DB, RETHINKDB_AUTH
   # * RDB_HOST, RDB_PORT, RDB_DB, RDB_AUTH
-  config.rethinkdb_url = config.default_rethinkdb_url
+  
+  #config.rethinkdb_url = config.default_rethinkdb_url
+  #config.RDB_HOST = 127.0.0.1
+  #config.RDB_PORT = 28015
+  #config.RDB_DB = dynas
+  #config.RDB_AUTH = unimedia
+  config.rethinkdb_url = "rethinkdb://localhost/dynas"
 
   # NoBrainer uses logger to emit debugging information.
   # The default logger is the Rails logger if run with Rails,
