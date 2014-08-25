@@ -28,7 +28,6 @@ GEM
       thread_safe (~> 0.1)
       tzinfo (~> 1.1)
     arel (5.0.1.20140414130214)
-    bcrypt (3.1.7)
     bcrypt (3.1.7-x86-mingw32)
     brakeman (2.6.2)
       erubis (~> 2.6)
@@ -60,6 +59,9 @@ GEM
     faraday (0.9.0)
       multipart-post (>= 1.2, < 3)
     fastercsv (1.5.5)
+    foundation-icons-sass-rails (3.0.0)
+      railties (>= 3.1.1)
+      sass-rails (>= 3.1.1)
     foundation-rails (5.4.0.0)
       railties (>= 3.1.0)
       sass (>= 3.2.0)
@@ -86,11 +88,11 @@ GEM
     multi_json (1.10.1)
     multi_xml (0.5.5)
     multipart-post (2.0.0)
-    nobrainer (0.13.1)
-      activemodel (>= 4.0.0)
-      activesupport (>= 4.0.0)
+    nobrainer (0.15.0)
+      activemodel (>= 4.1.0)
+      activesupport (>= 4.1.0)
       middleware (~> 0.1.0)
-      rethinkdb (~> 1.12.0.1)
+      rethinkdb (>= 1.13.0.0)
     nobrainer-devise (0.2)
       devise (>= 3.2.2)
       nobrainer (>= 0.10.0)
@@ -141,11 +143,8 @@ GEM
     rake (10.3.2)
     rdoc (4.1.1)
       json (~> 1.4)
-    rethinkdb (1.12.0.2)
+    rethinkdb (1.13.0.1)
       json
-      ruby-protocol-buffers
-      varint
-    ruby-protocol-buffers (1.5.1)
     ruby2ruby (2.1.1)
       ruby_parser (~> 3.1)
       sexp_processor (~> 4.0)
@@ -192,17 +191,16 @@ GEM
     uglifier (2.5.3)
       execjs (>= 0.3.0)
       json (>= 1.8.0)
-    varint (0.1.0)
     warden (1.2.3)
       rack (>= 1.0)
 
 PLATFORMS
-  ruby
   x86-mingw32
 
 DEPENDENCIES
   brakeman
   coffee-rails (~> 4.0.0)
+  foundation-icons-sass-rails
   foundation-rails
   jbuilder (~> 2.0)
   jquery-rails
