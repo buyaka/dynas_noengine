@@ -41,7 +41,7 @@ PName=admin_member
 LName=admin_member
 Comment=
 TableOption=
-Page=Main
+Page=MAIN
 Left=1050
 Top=1100
 Field="id","id","uid",,,"","",$FFFFFFFF,""
@@ -55,7 +55,7 @@ EffectMode=None
 Color=$000000
 BkColor=$FFFFFF
 ModifiedDateTime=20140825113328
-Position="Main",1050,1100
+Position="MAIN",1050,1100
 
 [Relation]
 Entity1=field_type
@@ -83,8 +83,8 @@ PName=field_type
 LName=field_type
 Comment=
 TableOption=
-Page=Main
-Left=1950
+Page=MAIN
+Left=2050
 Top=200
 Field="id","id","uid",,,"","",$FFFFFFFF,""
 Field="type_name","type_name","uid",,,"","",$FFFFFFFF,""
@@ -94,7 +94,7 @@ EffectMode=None
 Color=$000000
 BkColor=$FFFFFF
 ModifiedDateTime=20140825112757
-Position="Main",1950,200
+Position="MAIN",2050,200
 
 [Relation]
 Entity1=member
@@ -121,7 +121,7 @@ PName=bill_address
 LName=bill_address
 Comment=
 TableOption=
-Page=Main
+Page=MAIN
 Left=550
 Top=200
 Field="id","id","uid",,,"","",$FFFFFFFF,""
@@ -132,7 +132,7 @@ EffectMode=None
 Color=$000000
 BkColor=$FFFFFF
 ModifiedDateTime=20140825112610
-Position="Main",550,200
+Position="MAIN",550,200
 
 [Relation]
 Entity1=plan
@@ -160,7 +160,7 @@ PName=NEW_ENTITY1
 LName=plan
 Comment=
 TableOption=
-Page=Main
+Page=MAIN
 Left=550
 Top=850
 Field="plan_id","plan_id","uid",,,"","",$FFFFFFFF,""
@@ -172,7 +172,7 @@ EffectMode=None
 Color=$000000
 BkColor=$FFFFFF
 ModifiedDateTime=20140825111736
-Position="Main",550,850
+Position="MAIN",550,850
 
 [Relation]
 Entity1=plan
@@ -183,7 +183,7 @@ Fields1=id
 Fields2=plan_id
 Cardinarity1=
 Cardinarity2=
-Position="MAIN",0,2381,7619,2188,R,R
+Position="MAIN",0,2381,7619,2146,R,R
 Dependence=0
 Caption=
 PName=
@@ -191,7 +191,7 @@ ModifiedDateTime=20140825111351
 LineMode=0
 Bar1=238
 Bar2=762
-Bar3=219
+Bar3=215
 TermPos1=R
 TermPos2=R
 
@@ -200,7 +200,7 @@ PName=plan
 LName=plan
 Comment=
 TableOption=
-Page=Main
+Page=MAIN
 Left=900
 Top=850
 Field="id","id","",,,"","",$FFFFFFFF,""
@@ -211,7 +211,7 @@ EffectMode=None
 Color=$000000
 BkColor=$FFFFFF
 ModifiedDateTime=20140825111305
-Position="Main",900,850
+Position="MAIN",900,850
 
 [Relation]
 Entity1=application
@@ -281,8 +281,8 @@ PName=field
 LName=field
 Comment=
 TableOption=
-Page=Main
-Left=2150
+Page=MAIN
+Left=2300
 Top=500
 Field="id","id","uid",,,"","",$FFFFFFFF,""
 Field="resource_id","resource_id","uid",,,"","",$FFFFFFFF,""
@@ -293,15 +293,15 @@ EffectMode=None
 Color=$000000
 BkColor=$FFFFFF
 ModifiedDateTime=20140825112821
-Position="Main",2150,500
+Position="MAIN",2300,500
 
 [Entity]
 PName=user
 LName=user
 Comment=
 TableOption=
-Page=Main
-Left=1800
+Page=MAIN
+Left=2000
 Top=750
 Field="id","id","uid",,,"","",$FFFFFFFF,""
 Field="name","name","VARCHAR(50)",,,"","",$FFFFFFFF,""
@@ -313,15 +313,15 @@ EffectMode=None
 Color=$000000
 BkColor=$FFFFFF
 ModifiedDateTime=20140825110906
-Position="Main",1800,750
+Position="MAIN",2000,750
 
 [Entity]
 PName=resource
 LName=resource
 Comment=
 TableOption=
-Page=Main
-Left=1800
+Page=MAIN
+Left=2000
 Top=500
 Field="id","id","uid",,,"","",$FFFFFFFF,""
 Field="name","name","VARCHAR(50)",,,"","",$FFFFFFFF,""
@@ -332,7 +332,7 @@ EffectMode=None
 Color=$000000
 BkColor=$FFFFFF
 ModifiedDateTime=20140825110720
-Position="Main",1800,500
+Position="MAIN",2000,500
 
 [Relation]
 Entity1=member
@@ -343,7 +343,7 @@ Fields1=id
 Fields2=member_id
 Cardinarity1=
 Cardinarity2=
-Position="MAIN",0,1167,8833,1167,R,R
+Position="MAIN",0,1167,8833,1165,R,R
 Dependence=0
 Caption=
 PName=
@@ -351,7 +351,7 @@ ModifiedDateTime=20140825110522
 LineMode=0
 Bar1=117
 Bar2=883
-Bar3=117
+Bar3=116
 TermPos1=R
 TermPos2=R
 
@@ -360,8 +360,8 @@ PName=application
 LName=application
 Comment=
 TableOption=
-Page=Main
-Left=1450
+Page=MAIN
+Left=1700
 Top=500
 Field="id","id","uid",,,"","",$FFFFFFFF,""
 Field="name","name","VARCHAR(50)",,,"","",$FFFFFFFF,""
@@ -373,7 +373,7 @@ EffectMode=None
 Color=$000000
 BkColor=$FFFFFF
 ModifiedDateTime=20140825112845
-Position="Main",1450,500
+Position="MAIN",1700,500
 
 [Relation]
 Entity1=company
@@ -401,8 +401,8 @@ PName=member
 LName=member
 Comment=
 TableOption=
-Page=Main
-Left=850
+Page=MAIN
+Left=1250
 Top=500
 Field="id","id","uid",,,"","",$FFFFFFFF,""
 Field="name","name","VARCHAR(50)",,,"","",$FFFFFFFF,""
@@ -415,14 +415,14 @@ EffectMode=None
 Color=$000000
 BkColor=$FFFFFF
 ModifiedDateTime=20140825111347
-Position="Main",850,500
+Position="MAIN",1250,500
 
 [Entity]
 PName=company
 LName=company
 Comment=
 TableOption=
-Page=Main
+Page=MAIN
 Left=550
 Top=550
 Field="id","id","",,,"","",$FFFFFFFF,""
@@ -434,7 +434,7 @@ EffectMode=None
 Color=$000000
 BkColor=$FFFFFF
 ModifiedDateTime=20140825105811
-Position="Main",550,550
+Position="MAIN",550,550
 
 [Shape]
 Page=Main
@@ -454,11 +454,11 @@ ImageFileName=
 
 [Shape]
 Page=Main
-Left=143
+Left=241
 Top=42
-Width=1191
+Width=1093
 Height=1278
-BrushColor=$6BA135
+BrushColor=$ADE787
 ShapeType=Rectangle
 Text=System Admin 
 FontName=Tahoma
