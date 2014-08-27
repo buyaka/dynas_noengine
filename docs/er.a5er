@@ -62,7 +62,7 @@ PName=custom_function
 LName=custom_function
 Comment=
 TableOption=
-Page=Main
+Page=MAIN
 Left=2000
 Top=1050
 Field="id","id","uid",,,"","",$FFFFFFFF,""
@@ -75,7 +75,7 @@ EffectMode=None
 Color=$000000
 BkColor=$FFFFFF
 ModifiedDateTime=20140825133324
-Position="Main",2000,1050,190,152
+Position="MAIN",2000,1050,190,152
 
 [Entity]
 PName=admin_member
@@ -177,7 +177,7 @@ Position="MAIN",1550,200
 
 [Relation]
 Entity1=plan
-Entity2=NEW_ENTITY1
+Entity2=plan_options
 RelationType1=1
 RelationType2=3
 Fields1=id
@@ -197,8 +197,8 @@ TermPos1=R
 TermPos2=R
 
 [Entity]
-PName=NEW_ENTITY1
-LName=plan
+PName=plan_options
+LName=plan_options
 Comment=
 TableOption=
 Page=MAIN
@@ -212,7 +212,7 @@ Field="note","note","TEXT",,,"","",$FFFFFFFF,""
 EffectMode=None
 Color=$000000
 BkColor=$FFFFFF
-ModifiedDateTime=20140825111736
+ModifiedDateTime=20140827090455
 Position="MAIN",550,850
 
 [Relation]
