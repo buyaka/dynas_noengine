@@ -1,5 +1,6 @@
 class Member
   include NoBrainer::Document
+  include NoBrainer::Document::Timestamps
   NoBrainer::Document::DynamicAttributes
   
   # Include default devise modules. Others available are:

@@ -28,6 +28,7 @@ GEM
       thread_safe (~> 0.1)
       tzinfo (~> 1.1)
     arel (5.0.1.20140414130214)
+    bcrypt (3.1.7)
     bcrypt (3.1.7-x86-mingw32)
     brakeman (2.6.2)
       erubis (~> 2.6)
@@ -195,6 +196,7 @@ GEM
       rack (>= 1.0)
 
 PLATFORMS
+  ruby
   x86-mingw32
 
 DEPENDENCIES
