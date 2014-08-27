@@ -1,6 +1,7 @@
 class App
   include NoBrainer::Document
   include NoBrainer::Document::Timestamps
+  NoBrainer::Document::DynamicAttributes
 
   field :name, :type => String
   field :member_id, :type => String

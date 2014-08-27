@@ -1,4 +1,6 @@
 class AppsController < ApplicationController
+  before_filter :authenticate_member!
+  before_filter :set_db
   before_action :set_app, only: [:show, :edit, :update, :destroy]
 
   # GET /apps
