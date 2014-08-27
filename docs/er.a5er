@@ -37,7 +37,7 @@ SqlSeparator=0
 ShowTag=1
 
 [Relation]
-Entity1=application
+Entity1=app
 Entity2=custom_function
 RelationType1=1
 RelationType2=3
@@ -255,7 +255,7 @@ ModifiedDateTime=20140825111305
 Position="MAIN",900,850
 
 [Relation]
-Entity1=application
+Entity1=app
 Entity2=user
 RelationType1=1
 RelationType2=3
@@ -276,7 +276,7 @@ TermPos1=R
 TermPos2=R
 
 [Relation]
-Entity1=application
+Entity1=app
 Entity2=resource
 RelationType1=1
 RelationType2=3
@@ -377,7 +377,7 @@ Position="MAIN",2000,500
 
 [Relation]
 Entity1=member
-Entity2=application
+Entity2=app
 RelationType1=1
 RelationType2=3
 Fields1=id
@@ -397,8 +397,8 @@ TermPos1=R
 TermPos2=R
 
 [Entity]
-PName=application
-LName=application
+PName=app
+LName=app
 Comment=
 TableOption=
 Page=MAIN
@@ -413,7 +413,7 @@ Field="domain","domain","VARCHAR(255)",,,"","",$FFFFFFFF,""
 EffectMode=None
 Color=$000000
 BkColor=$FFFFFF
-ModifiedDateTime=20140825112845
+ModifiedDateTime=20140827110232
 Position="MAIN",1700,500
 
 [Relation]

@@ -10,4 +10,8 @@ class DashboardController < ApplicationController
 
   def resources
   end
+
+  def analyses
+  end
+
 end

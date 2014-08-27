@@ -18,6 +18,7 @@ Rails.application.routes.draw do
   get 'dashboard/index'
   get 'dashboard/apps'
   get 'dashboard/resources'
+  get 'dashboard/analyses'
 
   devise_for :members, :controllers => { :omniauth_callbacks => "omniauth_callbacks" }
 
