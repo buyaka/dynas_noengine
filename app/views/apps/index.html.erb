@@ -15,7 +15,7 @@
   <tbody>
     <% @apps.each do |app| %>
       <tr>
-        <td><%= app.name %></td>
+        <td><%= link_to app.name, app %></td>
         <td><%= app.member_id %></td>
         <td><%= app.note %></td>
         <td><%= app.app_key %></td>
