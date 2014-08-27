@@ -27,7 +27,8 @@ class AppsController < ApplicationController
   # POST /apps.json
   def create
     @app = App.new(app_params)
-
+    @app.member_id = current_member.id
+    
     respond_to do |format|
       if @app.save
         format.html { redirect_to @app, notice: 'App was successfully created.' }
