@@ -20,5 +20,30 @@
   <%= @app.domain %>
 </p>
 
+<br/>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Note</th>
+      <th>Permissions</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+  <tbody>
+ <% @boxes.each do |box| %>
+    <tr>
+      <td><%= box.name %></td>
+      <td><%= box.note %></td>
+      <td><%= box.permissions %></td>
+      <td><%= link_to 'Show', app_box_path(@app, box) %></td>
+      <td><%= link_to 'Edit', edit_app_box_path(@app, box) %></td>
+      <td><%= link_to 'Destroy', [@app, box], method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    </tr>
+  <% end %>
+  </tbody>
+</table>
+
 <%= link_to 'Edit', edit_app_path(@app) %> |
 <%= link_to 'Back', apps_path %>

@@ -12,6 +12,7 @@ class AppsController < ApplicationController
   # GET /apps/1
   # GET /apps/1.json
   def show
+    @boxes = Box.where(["app_id = ?", @app.id])
   end
 
   # GET /apps/new
@@ -28,7 +29,7 @@ class AppsController < ApplicationController
   def create
     @app = App.new(app_params)
     @app.member_id = current_member.id
-    
+
     respond_to do |format|
       if @app.save
         format.html { redirect_to @app, notice: 'App was successfully created.' }
