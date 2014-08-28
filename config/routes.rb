@@ -5,7 +5,9 @@ Rails.application.routes.draw do
   resources :field_types
 
   resources :apps do
-    resources :boxes
+    resources :boxes do
+      resources :items
+    end
   end
 
   #namespace :api, defaults: {format: 'json'} do
