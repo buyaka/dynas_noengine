@@ -1,6 +1,6 @@
 class BoxesController < ApplicationController
+  before_action :load_app
   before_action :set_box, only: [:show, :edit, :update, :destroy]
-  before_filter :load_app
 
   # GET /boxes
   # GET /boxes.json
