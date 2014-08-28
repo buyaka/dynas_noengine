@@ -1,7 +1,8 @@
 <li class="name"><%= link_to 'Plans', welcome_plan_path %></li>
 
 <% if member_signed_in? %>
-    <li class="name"><%= link_to 'Applications', apps_path %></li>
+    	<li class="name"><%= link_to 'Applications', apps_path %></li>
+    	<li class="name"><%= link_to 'Field types', field_types_path %></li>
 	<li class="name"><%= link_to 'My Profile', "#" %></li>
 	<li class="name"><%= link_to 'Sign Out', destroy_member_session_path %></li>
 <% else %>

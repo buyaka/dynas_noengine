@@ -2,6 +2,8 @@ require 'api_constraints'
 
 Rails.application.routes.draw do
   
+  resources :field_types
+
   resources :apps do
     resources :boxes
   end
