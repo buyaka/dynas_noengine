@@ -3,6 +3,8 @@ class App
   include NoBrainer::Document::Timestamps
   NoBrainer::Document::DynamicAttributes
 
+  has_many :boxes
+
   store_in :database => ->{ "#{Thread.current[:member]}" }
   self.include_root_in_json = true
 
