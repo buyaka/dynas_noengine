@@ -277,7 +277,7 @@ TermPos2=R
 
 [Relation]
 Entity1=app
-Entity2=resource
+Entity2=box
 RelationType1=1
 RelationType2=3
 Fields1=id
@@ -297,12 +297,12 @@ TermPos1=R
 TermPos2=R
 
 [Relation]
-Entity1=resource
+Entity1=box
 Entity2=field
 RelationType1=1
 RelationType2=3
 Fields1=id
-Fields2=resource_id
+Fields2=box_id
 Cardinarity1=
 Cardinarity2=
 Position="MAIN",0,1076,8924,1076,R,R
@@ -326,14 +326,14 @@ Page=MAIN
 Left=2300
 Top=500
 Field="id","id","uid",,,"","",$FFFFFFFF,""
-Field="resource_id","resource_id","uid",,,"","",$FFFFFFFF,""
+Field="box_id","box_id","uid",,,"","",$FFFFFFFF,""
 Field="name","name","TEXT",,,"","",$FFFFFFFF,""
 Field="type_id","type_id","TEXT",,,"","",$FFFFFFFF,""
 Field="note","note","TEXT",,,"","",$FFFFFFFF,""
 EffectMode=None
 Color=$000000
 BkColor=$FFFFFF
-ModifiedDateTime=20140825112821
+ModifiedDateTime=20140828091445
 Position="MAIN",2300,500
 
 [Entity]
@@ -357,8 +357,8 @@ ModifiedDateTime=20140825110906
 Position="MAIN",2000,750
 
 [Entity]
-PName=resource
-LName=resource
+PName=box
+LName=box
 Comment=
 TableOption=
 Page=MAIN
@@ -372,7 +372,7 @@ Field="permissions","permissions","TEXT",,,"","",$FFFFFFFF,""
 EffectMode=None
 Color=$000000
 BkColor=$FFFFFF
-ModifiedDateTime=20140825110720
+ModifiedDateTime=20140828091431
 Position="MAIN",2000,500
 
 [Relation]
