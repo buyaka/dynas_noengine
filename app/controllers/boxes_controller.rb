@@ -15,7 +15,7 @@ class BoxesController < ApplicationController
 
   # GET /boxes/new
   def new
-    @box = @app.box.new
+    @box = Box.new
   end
 
   # GET /boxes/1/edit
@@ -25,7 +25,8 @@ class BoxesController < ApplicationController
   # POST /boxes
   # POST /boxes.json
   def create
-    @box = @app.box.new(box_params)
+    @box = Box.new(box_params)
+    @box.app_id = @app.id
 
     respond_to do |format|
       if @box.save
@@ -65,7 +66,7 @@ class BoxesController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_box
-      @box = @app.box.find(params[:id])
+      @box = Box.find(params[:id])
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.
