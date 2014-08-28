@@ -2,11 +2,11 @@ class App
   include NoBrainer::Document
   include NoBrainer::Document::Timestamps
   NoBrainer::Document::DynamicAttributes
-
-  has_many :boxes
-
+  
   store_in :database => ->{ "#{Thread.current[:member]}" }
   self.include_root_in_json = true
+
+  has_many :boxes
 
   field :name, :type => String
   field :member_id, :type => String
