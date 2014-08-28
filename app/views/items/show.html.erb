@@ -20,5 +20,5 @@
   <%= @item.note %>
 </p>
 
-<%= link_to 'Edit', edit_item_path(@item) %> |
-<%= link_to 'Back', items_path %>
+<%= link_to 'Edit', edit_box_item_path(@box, @item) %> |
+<%= link_to 'Back', box_items_path(@box) %>

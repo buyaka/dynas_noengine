@@ -125,7 +125,7 @@ LName=field_type
 Comment=
 TableOption=
 Page=MAIN
-Left=1100
+Left=850
 Top=300
 Field="id","id","uid",,,"","",$FFFFFFFF,""
 Field="type_name","type_name","uid",,,"","",$FFFFFFFF,""
@@ -135,7 +135,7 @@ EffectMode=None
 Color=$000000
 BkColor=$FFFFFF
 ModifiedDateTime=20140825112757
-Position="MAIN",1100,300
+Position="MAIN",850,300
 
 [Relation]
 Entity1=member
@@ -480,7 +480,7 @@ Position="MAIN",550,550
 [Shape]
 Page=Main
 Left=1352
-Top=106
+Top=69
 Width=1191
 Height=1222
 BrushColor=$F0CAA6

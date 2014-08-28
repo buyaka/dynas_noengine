@@ -20,5 +20,36 @@
   <%= @box.permissions %>
 </p>
 
+<br/>
+
+<h1>Items</h1>
+
+<%= link_to 'New item', new_box_item_path(@box) %>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Box ID</th>
+      <th>Type</th>
+      <th>Note</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+  <tbody>
+ <% @items.each do |item| %>
+    <tr>
+      <td><%= item.name %></td>
+      <td><%= item.box_id %></td>
+      <td><%= item.type %></td>
+      <td><%= item.note %></td>
+      <td><%= link_to 'Show', box_item_path(@box, item) %></td>
+      <td><%= link_to 'Edit', edit_box_item_path(@box, item) %></td>
+      <td><%= link_to 'Destroy', [@box, item], method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    </tr>
+  <% end %>
+  </tbody>
+</table>
+
 <%= link_to 'Edit', edit_app_box_path(@app, @box) %> |
 <%= link_to 'Back', app_boxes_path(@app) %>

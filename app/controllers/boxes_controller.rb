@@ -11,6 +11,7 @@ class BoxesController < ApplicationController
   # GET /boxes/1
   # GET /boxes/1.json
   def show
+    @items = Item.where(:box_id => @box.id)
   end
 
   # GET /boxes/new
