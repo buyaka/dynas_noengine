@@ -18,9 +18,9 @@
         <td><%= box.app_id %></td>
         <td><%= box.note %></td>
         <td><%= box.permissions %></td>
-        <td><%= link_to 'Show', box %></td>
-        <td><%= link_to 'Edit', edit_box_path(box) %></td>
-        <td><%= link_to 'Destroy', box, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Show', app_box_path(@app, box) %></td>
+        <td><%= link_to 'Edit', edit_app_box_path(@app, box) %></td>
+        <td><%= link_to 'Destroy', [@app, box], method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -28,4 +28,4 @@
 
 <br>
 
-<%= link_to 'New Box', new_box_path %>
+<%= link_to 'New Box', new_app_box_path(@app) %>
