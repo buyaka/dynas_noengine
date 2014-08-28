@@ -20,5 +20,5 @@
   <%= @box.permissions %>
 </p>
 
-<%= link_to 'Edit', edit_box_path(@box) %> |
-<%= link_to 'Back', boxes_path %>
+<%= link_to 'Edit', edit_app_child_path(@app, @box) %> |
+<%= link_to 'Back', app_boxes_path(@app) %>

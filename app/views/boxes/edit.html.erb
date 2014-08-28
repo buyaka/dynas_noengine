@@ -2,5 +2,5 @@
 
 <%= render 'form' %>
 
-<%= link_to 'Show', @box %> |
-<%= link_to 'Back', boxes_path %>
+<%= link_to 'Show', app_box_path(@app, @box)  %> |
+<%= link_to 'Back', app_boxes_path(@app) %>
