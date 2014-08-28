@@ -100,22 +100,22 @@ Position="MAIN",1050,1100
 
 [Relation]
 Entity1=field_type
-Entity2=field
+Entity2=item
 RelationType1=1
 RelationType2=3
 Fields1=id
-Fields2=type_id
+Fields2=type
 Cardinarity1=
 Cardinarity2=
-Position="MAIN",0,5507,4493,4960,R,R
+Position="MAIN",0,4847,9500,2513,R,R
 Dependence=0
 Caption=
 PName=
 ModifiedDateTime=20140825112831
 LineMode=0
-Bar1=551
-Bar2=449
-Bar3=496
+Bar1=485
+Bar2=950
+Bar3=251
 TermPos1=R
 TermPos2=R
 
@@ -125,8 +125,8 @@ LName=field_type
 Comment=
 TableOption=
 Page=MAIN
-Left=2050
-Top=200
+Left=1100
+Top=300
 Field="id","id","uid",,,"","",$FFFFFFFF,""
 Field="type_name","type_name","uid",,,"","",$FFFFFFFF,""
 Field="type_value","type_value","TEXT",,,"","",$FFFFFFFF,""
@@ -135,7 +135,7 @@ EffectMode=None
 Color=$000000
 BkColor=$FFFFFF
 ModifiedDateTime=20140825112757
-Position="MAIN",2050,200
+Position="MAIN",1100,300
 
 [Relation]
 Entity1=member
@@ -146,14 +146,14 @@ Fields1=
 Fields2=
 Cardinarity1=
 Cardinarity2=
-Position="MAIN",0,6695,5218,2381,R,R
+Position="MAIN",0,6695,5218,2366,R,R
 Dependence=0
 Caption=
 PName=
 LineMode=0
 Bar1=670
 Bar2=522
-Bar3=238
+Bar3=237
 TermPos1=R
 TermPos2=R
 
@@ -164,7 +164,7 @@ Comment=
 TableOption=
 Page=MAIN
 Left=1550
-Top=200
+Top=750
 Field="id","id","uid",,,"","",$FFFFFFFF,""
 Field="address","address","TEXT",,,"","",$FFFFFFFF,""
 Field="flg_active","flg_active","BOOL",,,"","",$FFFFFFFF,""
@@ -173,7 +173,7 @@ EffectMode=None
 Color=$000000
 BkColor=$FFFFFF
 ModifiedDateTime=20140825112610
-Position="MAIN",1550,200
+Position="MAIN",1550,750
 
 [Relation]
 Entity1=plan
@@ -298,43 +298,43 @@ TermPos2=R
 
 [Relation]
 Entity1=box
-Entity2=field
+Entity2=item
 RelationType1=1
 RelationType2=3
 Fields1=id
 Fields2=box_id
 Cardinarity1=
 Cardinarity2=
-Position="MAIN",0,1076,8924,1076,R,R
+Position="MAIN",0,1076,4071,6697,R,R
 Dependence=0
 Caption=
 PName=
 ModifiedDateTime=20140825111103
 LineMode=0
 Bar1=108
-Bar2=892
-Bar3=108
+Bar2=407
+Bar3=670
 TermPos1=R
 TermPos2=R
 
 [Entity]
-PName=field
-LName=field
+PName=item
+LName=item
 Comment=
 TableOption=
 Page=MAIN
 Left=2300
-Top=500
+Top=300
 Field="id","id","uid",,,"","",$FFFFFFFF,""
 Field="box_id","box_id","uid",,,"","",$FFFFFFFF,""
 Field="name","name","TEXT",,,"","",$FFFFFFFF,""
-Field="type_id","type_id","TEXT",,,"","",$FFFFFFFF,""
+Field="type","type","TEXT",,,"","",$FFFFFFFF,""
 Field="note","note","TEXT",,,"","",$FFFFFFFF,""
 EffectMode=None
 Color=$000000
 BkColor=$FFFFFF
-ModifiedDateTime=20140828091445
-Position="MAIN",2300,500
+ModifiedDateTime=20140828133148
+Position="MAIN",2300,300,159,196
 
 [Entity]
 PName=user
@@ -372,7 +372,7 @@ Field="permissions","permissions","TEXT",,,"","",$FFFFFFFF,""
 EffectMode=None
 Color=$000000
 BkColor=$FFFFFF
-ModifiedDateTime=20140828091431
+ModifiedDateTime=20140828114453
 Position="MAIN",2000,500
 
 [Relation]
@@ -479,8 +479,8 @@ Position="MAIN",550,550
 
 [Shape]
 Page=Main
-Left=1357
-Top=64
+Left=1352
+Top=106
 Width=1191
 Height=1222
 BrushColor=$F0CAA6
